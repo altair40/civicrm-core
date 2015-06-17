@@ -154,7 +154,7 @@ class CRM_Case_Form_CustomData extends CRM_Core_Form {
       'activity_type_id' => $activityTypeID,
       'source_contact_id' => $session->get('userID'),
       'is_auto' => TRUE,
-      'subject' => $this->_customTitle . " : change data",
+      'subject' => $this->_customTitle . " : ".ts('change data'),
       'status_id' => CRM_Core_OptionGroup::getValue('activity_status',
         'Completed',
         'name'
