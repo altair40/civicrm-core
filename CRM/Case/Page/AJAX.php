@@ -108,7 +108,7 @@ class CRM_Case_Page_AJAX {
     $activityParams['status_id'] = CRM_Core_OptionGroup::getValue('activity_status', 'Completed', 'name');
     $activityParams['case_id'] = $caseId;
     $activityParams['is_auto'] = 0;
-    $activityParams['subject'] = 'Change Case Tags';
+    $activityParams['subject'] = ts('Change Case Tags');
 
     $activity = CRM_Activity_BAO_Activity::create($activityParams);
 
